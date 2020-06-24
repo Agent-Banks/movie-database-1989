@@ -9,9 +9,12 @@ export class Movie extends Component {
           width="200"
           height="200"
           className="mr-3"
+          alt={title}
         />
         <div className="media-body">
-          <h5 className="mt-0 mb-1">{title}</h5>
+          <h5 className="mt-0 mb-1">
+            <strong>{title}</strong>
+          </h5>
           {overview}
         </div>
       </li>
