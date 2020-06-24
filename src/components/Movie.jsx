@@ -3,7 +3,7 @@ export class Movie extends Component {
   render() {
     const { title, poster_path, overview } = this.props
     return (
-      <li className="media bg-warning p-4">
+      <li className="media p-4">
         <img
           src={`https://image.tmdb.org/t/p/w185_and_h278_bestv2${poster_path}`}
           width="200"
