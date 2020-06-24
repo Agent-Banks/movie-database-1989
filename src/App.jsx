@@ -4,13 +4,10 @@ class Movie extends Component {
   render() {
     return (
       <li className="media">
-        <img src="..." class="mr-3" alt="..." />
+        <img src={this.props.poster} class="mr-3" alt={this.props.title} />
         <div className="media-body">
-          <h5 className="mt-0 mb-1">List-based media object</h5>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-          scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-          vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
-          vulputate fringilla. Donec lacinia congue felis in faucibus.
+          <h5 className="mt-0 mb-1">{this.props.title}</h5>
+          {this.props.description}
         </div>
       </li>
     )
@@ -26,10 +23,10 @@ class App extends Component {
           <p className="lead">Showcase of the most popular movies of 1989.</p>
         </div>
         <ul className="list-unstyled">
-          <Movie />
-          <Movie />
-          <Movie />
-          <Movie />
+          <Movie title="something" description="something" poster="" />
+          <Movie title="something" description="something" poster="" />
+          <Movie title="something" description="something" poster="" />
+          <Movie title="something" description="something" poster="" />
         </ul>
       </main>
     )
