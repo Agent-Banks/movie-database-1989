@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 import { Movie } from './components/Movie'
-import sampleMoviesArray from './data/sample-movies-api.json'
 
 class App extends Component {
   state = {
-    movies: sampleMoviesArray,
+    movies: [],
   }
 
   render() {
