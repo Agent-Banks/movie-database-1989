@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 export class Movie extends Component {
   render() {
+    const { title, poster_path, overview } = this.props
     return (
       <li className="media">
-        <img src={this.props.poster} class="mr-3" alt={this.props.title} />
+        <img src={poster_path} width="200" height="200" className="mr-3" />
         <div className="media-body">
-          <h5 className="mt-0 mb-1">{this.props.title}</h5>
-          {this.props.description}
+          <h5 className="mt-0 mb-1">{title}</h5>
+          {overview}
         </div>
       </li>
     )
