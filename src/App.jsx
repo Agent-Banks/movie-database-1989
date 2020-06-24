@@ -4,6 +4,10 @@ class App extends Component {
   render() {
     return (
       <main className="container p-4">
+        <div class="jumbotron">
+          <h1 class="display-4">Party Like Its 1989</h1>
+          <p class="lead">Showcase of the most popular movies of 1989.</p>
+        </div>
         <ul class="list-unstyled">
           <li class="media">
             <img src="..." class="mr-3" alt="..." />
