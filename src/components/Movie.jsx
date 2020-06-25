@@ -15,7 +15,7 @@ export class Movie extends Component {
           <h5 className="mt-0 mb-1">
             <strong>{title}</strong>
           </h5>
-          {overview}
+          <p className="mediaOverview">{overview}</p>
         </div>
       </li>
     )
